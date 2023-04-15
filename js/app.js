@@ -66,7 +66,7 @@ console.log(resultado) */
 // Posso sacar dinheiro em caixas eletrônicos
 // Para poder comprar em lugares que não aceitam o cartão de débito ou crédito
 
-var saldo = 1000
+/* var saldo = 1000
 
 function saque(valor) {
     if (valor > saldo) {
@@ -80,7 +80,7 @@ function saque(valor) {
 
 saque(701)
 
-console.log(saldo)
+console.log(saldo) */
 
 // Cenário 1: Saque com sucesso
 // Dado que meu saldo é de 1000 reais
@@ -99,3 +99,27 @@ console.log(saldo)
 // Quando faço um saque no valor de 701 reais
 // Então não deve deduzir do meu saldo
 // E deve mostrar uma mensagem de alerta informando que o valor é superior ao máximo permitido por operação
+
+// Array //
+
+/* var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinhos']
+
+console.log(gaveteiro[3]) */
+
+var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+
+personagens.push('C3pO')
+personagens.push('R2D2')
+
+//personagens.pop()
+
+personagens = personagens.filter(function(p){
+    return p !== 'Darth Vader'
+})
+
+personagens = personagens.filter(function(p){
+    return p == 'Mestre Yoda'
+})
+
+console.log(personagens)
+
