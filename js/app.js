@@ -64,7 +64,7 @@ const App = new Vue({
         },
         search() {
 
-            if(this.searchName === '') {
+            if (this.searchName === '') {
                 return alert('O campo de busca é obrigatório.')
             }
 

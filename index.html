@@ -16,13 +16,18 @@
 <body>
 
     <div id="app">
-        <h1>{{ title }}</h1>
-        <small>Olá, {{ userName}}</small>
 
-        <form>
-            <input placeholder="Busca por nome..." v-model="searchName" />
-            <button type="button" @click="search()">Buscar</button>
-        </form>
+        <div class="top">
+            <div>
+                <h1>{{ title }}</h1>
+                <small>Olá, {{ userName}}</small>
+            </div>
+
+            <form>
+                <input placeholder="Busca por nome..." v-model="searchName" />
+                <button type="button" @click="search()">Buscar</button>
+            </form>
+        </div>
 
         <div class="characters">
             <div class="item" v-for="item of characters">
