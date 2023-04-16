@@ -18,6 +18,7 @@
             <div class="item" v-for="item of characters">
                 <img :src="item.avatar" :alt="item.nome" />
                 <p>{{ item.nome }}</p>
+                <button @click="like(item.nome)" data-test="like">Like</button>
             </div>
         </div>
     </div>
